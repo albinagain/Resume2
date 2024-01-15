@@ -1,3 +1,60 @@
-.first{
-    font-size: 100px;
+li{
+    padding: 5px 0px;
+}
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button.active {
+    background-color: #ccc; 
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.header{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+}
+.padded{
+    padding: 20px 0px;
+}
+.name{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.profile-pic{
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.icon{
+    height: 100px;
+    width: auto;
+}
+.no-list{
+    list-style-type: none;
 }
