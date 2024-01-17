@@ -6,7 +6,6 @@ li{
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
 .tabs button {
     background-color: inherit;
     float: left;
@@ -16,15 +15,19 @@ li{
     padding: 14px 16px;
     transition: 0.3s;
 }
-
+@media (max-width: 600px) {
+    .tabs button {
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+}
 .tabs button:hover {
     background-color: #ddd;
 }
-
 .tabs button.active {
     background-color: #ccc; 
 }
-
 .tabcontent {
     display: none;
     padding: 20px 15px;
@@ -45,6 +48,11 @@ li{
     margin-top: 50px;
     margin-left: 30px;
 }
+@media (max-width: 600px){
+    .name{
+        margin-top: 30px;
+    }
+}
 .profile-pic{
     height: 150px;
     width: auto;
@@ -52,8 +60,14 @@ li{
     border: 1px solid #ccc;
 }
 .icon{
-    height: 100px;
+    height: 100%;
+    max-height: 100px;
     width: auto;
+}
+@media (max-width: 600px){
+    .icon{
+        max-height: 50px;
+    }
 }
 .no-list{
     list-style-type: none;
