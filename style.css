@@ -41,6 +41,32 @@ li{
     display: flex;
     justify-content: left;
 }
+.bg-darker{
+    background-image: url(bg-darker.png);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+.bg-lighter{
+    background-image: url(bg-lighter.png);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+.thumbnail {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    text-align: center;
+}
+.thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    pointer-events: none;
+}
 .padded{
     padding: 20px 0px;
 }
@@ -71,4 +97,46 @@ li{
 }
 .no-list{
     list-style-type: none;
+}
+.really-good {
+    height: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.really-good h1{
+    font-weight: bold;
+}
+.horse{
+    width: 100%;
+    max-width: 600px;
+}
+.rainbow-text {
+    animation: rainbowText 3s infinite;
+}
+@keyframes rainbowText {
+    0% {
+        color: violet;
+    }
+    14% {
+        color: indigo;
+    }
+    28% {
+        color: blue;
+    }
+    42% {
+        color: green;
+    }
+    56% {
+        color: yellow;
+    }
+    70% {
+        color: orange;
+    }
+    84% {
+        color: red;
+    }
+    100% {
+        color: violet;
+    }
 }
